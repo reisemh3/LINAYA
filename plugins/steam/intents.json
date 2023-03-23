@@ -1,0 +1,7 @@
+[{
+    "subject":"launchGame",
+    "sentences": ["Lance (.*)", "Démarre (.*)", "Allume (.*)"],
+    "responses": [""],
+    "value": 0,
+    "type":"action"
+}]
