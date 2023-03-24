@@ -33,14 +33,15 @@ def analyse(sentence):
     gc.collect()
     return resultS[0], resultT[0], resultV[0][0]
 
-@app.route('/')
-def index():
-    return render_template('index.html')
 
 def searchAnswer(sentence, subject, typeS):
     plugin = PluginFactory.getPlugin(subject, typeS)
     return plugin.response(sentence)
-    
+  
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=5050)
     # subjects, types, stopwords, dictionnary = tools.defaultValues()

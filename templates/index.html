@@ -5,80 +5,278 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Face Time</title>
+    <title>Chat IA</title>
+    <link rel="shortcut icon" href="/static/img/IA.ico" type="image/x-icon">
+    <!-- PYTHON STYLE -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <!-- TAILWIND -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" />
+
     <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/main.css') }}">
 </head>
 
-<body>
-    <!-- <div class="h-screen flex">
-        <div class="flex w-1/2 bg-gradient-to-tr from-blue-500 to-blue-700 i justify-around items-center">
-            <div>
-                <h1 class="text-white font-bold text-4xl font-sans">
-                    Live Sreaming !
-                </h1>
-                <img src="{{ url_for('video_feed') }}" width="100%" />
-                <button type="submit" class="block w-28 bg-white text-black mt-4 py-2 rounded-2xl font-bold mb-2">
-                    <router-link to="/">Deconnexion</router-link>
-                </button>
-            </div>
-            <div class="loader">
-                <div class="item1"></div>
-                <div class="item2"></div>
-                <div class="item3"></div>
-            </div>
+<header>
+    <!-- headaer -->
+    <div class="px-5 py-5 flex justify-between items-center bg-white border-b-2">
+        <div class="font-semibold text-2xl">Chat IA</div>
+        <div>Online</div>
+        <div class="container2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="flex w-1/2 justify-center items-center bg-white">
-            <form @submit.prevent="login">
-                <h1 class="text-gray-800 font-bold text-2xl mb-1">
-                    Bonjour sur le chat en direct !
-                </h1>
-                <p class="text-sm font-normal text-gray-600 mb-7">
-                    Connectez-vous avec votre Prénom et Nom
-                </p>
-                <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-                    </svg>
-                    <input for="user_email" class="pl-2 outline-none border-none" type="text" name="" id="user_email"
-                        placeholder="Adresse Email" v-model="user.email" />
-                </div>
-                <div class="flex items-center border-2 py-2 px-3 rounded-2xl">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <input for="user_password" class="pl-2 outline-none border-none" type="text" name=""
-                        id="user_password" placeholder="Mot de Passe" v-model="user.password" />
-                </div>
+    </div>
+    <!-- end header -->
+</header>
 
-                <div class="flex justify-between mt-4 ml-2">
-                    <div class="text-sm">
-                        <input class="cursor-pointer" type="checkbox" name="rememberme" />
-                        <span class="text-sm"> Se souvenir de moi </span>
+<body>
+    <div class="flex items-center justify-center bg-gradient-to-t h-screen p-6 bg-no-repeat bg-center">
+        <!-- This is an example component -->
+        <div class="container mx-auto shadow-lg rounded-lg">
+            <div class="w-full md:w-1/2 lg:w-1/3">
+                <div class="flex flex-col space-y-4">
+                    <!-- Item -->
+                    <div class="flex justify-between py-6 px-4 bg-white/30 rounded-lg">
+                        <div class="flex items-center space-x-4">
+                            <img src="/static/img/IATA.png" class="rounded-full h-14 w-14" alt="">
+                            <div class="flex flex-col space-y-1">
+                                <span class="font-bold">Iatanori BOT</span>
+                                <span class="text-sm">Bonjour, je suis Iatanori. Je suis en feu 🔥 Poser moi une
+                                    question !</span>
+                            </div>
+                        </div>
+                        <div class="flex-none px-4 py-2 text-stone-600 text-xs md:text-sm">
+                            17m ago
+                        </div>
                     </div>
-                    <span class="ml-2 text-sm hover:text-blue-500 cursor-pointer">Mot de passe oublié ?
-                    </span>
-                </div>
-                <div class="">
-                    <button type="submit"
-                        class="button block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2">
-                        Connexion
-                    </button>
-                    <div
-                        class="flex space-x-2 justify-center items-end bg-gray-700 hover:bg-gray-600 text-white transition duration-100 py-2 rounded-2xl">
-                        <img class="h-5 cursor-pointer" src="https://i.imgur.com/arC60SB.png" alt="" />
-                        <button>Se connecter avec Google</button>
+                    <!-- Item -->
+                    <!-- Item -->
+                    <div class="flex justify-between py-6 px-4 bg-white/30 rounded-lg">
+                        <div class="flex items-center space-x-4">
+                            <img src="/static/img/API.png" class="rounded-full h-14 w-14" alt="">
+                            <div class="flex flex-col space-y-1">
+                                <span class="font-bold">Alexandre PINOT</span>
+                                <span class="text-sm">Nique ta mère !</span>
+                            </div>
+                        </div>
+                        <div class="flex-none px-4 py-2 text-stone-600 text-xs md:text-sm">
+                            40m ago
+                        </div>
                     </div>
+                    <!-- Item -->
+
+                    <!-- Item -->
+                    <div class="flex justify-between py-6 px-4 bg-white/30 rounded-lg">
+                        <div class="flex items-center space-x-4">
+                            <img src="/static/img/IATA.png" class="rounded-full h-14 w-14" alt="">
+                            <div class="flex flex-col space-y-1">
+                                <span class="font-bold">Iatanori BOT</span>
+                                <span class="text-sm">Avec plaisir !</span>
+                            </div>
+                        </div>
+                        <div class="flex-none px-4 py-2 text-stone-600 text-xs md:text-sm">
+                            50m ago
+                        </div>
+                    </div>
+                    <!-- Item -->
+
+
+                    <!-- Item -->
+                    <div class="flex justify-between py-6 px-4 bg-white/30 rounded-lg">
+                        <div class="flex items-center space-x-4">
+                            <img src="/static/img/IATA.png" class="rounded-full h-14 w-14" alt="">
+                            <div class="flex flex-col space-y-1">
+                                <span class="font-bold">Iatanori BOT</span>
+                                <span class="text-sm">Avec plaisir !</span>
+                            </div>
+                        </div>
+                        <div class="flex-none px-4 py-2 text-stone-600 text-xs md:text-sm">
+                            50m ago
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <!-- Item -->
+                    <div class="flex justify-between py-6 px-4 bg-white/30 rounded-lg">
+                        <div class="flex items-center space-x-4">
+                            <img src="/static/img/IATA.png" class="rounded-full h-14 w-14" alt="">
+                            <div class="flex flex-col space-y-1">
+                                <span class="font-bold">Iatanori BOT</span>
+                                <span class="text-sm">Avec plaisir !</span>
+                            </div>
+                        </div>
+                        <div class="flex-none px-4 py-2 text-stone-600 text-xs md:text-sm">
+                            50m ago
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <!-- Item -->
+                    <div class="flex justify-between py-6 px-4 bg-white/30 rounded-lg">
+                        <div class="flex items-center space-x-4">
+                            <img src="/static/img/IATA.png" class="rounded-full h-14 w-14" alt="">
+                            <div class="flex flex-col space-y-1">
+                                <span class="font-bold">Iatanori BOT</span>
+                                <span class="text-sm">Avec plaisir !</span>
+                            </div>
+                        </div>
+                        <div class="flex-none px-4 py-2 text-stone-600 text-xs md:text-sm">
+                            50m ago
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <!-- Item -->
+                    <div class="flex justify-between py-6 px-4 bg-white/30 rounded-lg">
+                        <div class="flex items-center space-x-4">
+                            <img src="/static/img/IATA.png" class="rounded-full h-14 w-14" alt="">
+                            <div class="flex flex-col space-y-1">
+                                <span class="font-bold">Iatanori BOT</span>
+                                <span class="text-sm">Avec plaisir !</span>
+                            </div>
+                        </div>
+                        <div class="flex-none px-4 py-2 text-stone-600 text-xs md:text-sm">
+                            50m ago
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <!-- Item -->
+                    <div class="flex justify-between py-6 px-4 bg-white/30 rounded-lg">
+                        <div class="flex items-center space-x-4">
+                            <img src="/static/img/IATA.png" class="rounded-full h-14 w-14" alt="">
+                            <div class="flex flex-col space-y-1">
+                                <span class="font-bold">Iatanori BOT</span>
+                                <span class="text-sm">Avec plaisir !</span>
+                            </div>
+                        </div>
+                        <div class="flex-none px-4 py-2 text-stone-600 text-xs md:text-sm">
+                            50m ago
+                        </div>
+                    </div>
+                    <!-- Item -->
+                    <!-- Item -->
+                    <div class="flex justify-between py-6 px-4 bg-white/30 rounded-lg">
+                        <div class="flex items-center space-x-4">
+                            <img src="/static/img/IATA.png" class="rounded-full h-14 w-14" alt="">
+                            <div class="flex flex-col space-y-1">
+                                <span class="font-bold">Iatanori BOT</span>
+                                <span class="text-sm">Avec plaisir !</span>
+                            </div>
+                        </div>
+                        <div class="flex-none px-4 py-2 text-stone-600 text-xs md:text-sm">
+                            50m ago
+                        </div>
+                    </div>
+                    <!-- Item -->
+
                 </div>
-            </form>
+            </div>
+            <br>
+            <!-- MessageBOX  max-w-2xl -->
+            <div class="mx-auto foot">
+                <form>
+                    <label for="chat" class="sr-only">Your message</label>
+                    <div class="flex items-center py-2 px-3 bg-gray-50 rounded-lg dark:bg-gray-700">
+                        <button type="button"
+                            class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <button type="button"
+                            class="p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <textarea id="chat" rows="1"
+                            class="block mx-4 p-2.5 w-full text-sm text-gray-900
+                            bg-white rounded-lg border border-gray-300 focus:ring-blue-500
+                            focus:border-blue-500 dark:bg-gray-800 dark:border-gray-600
+                            dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Your message..."></textarea>
+                        <button type="submit"
+                            class="inline-flex justify-center p-2 text-blue-600 rounded-full cursor-pointer hover:bg-blue-100 dark:text-blue-500 dark:hover:bg-gray-600">
+                            <svg class="w-6 h-6 rotate-90" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- Fermeture MessageBOX -->
         </div>
-    </div> -->
+        <!-- End body chat -->
+        <!-- Presentation CHATIA -->
+        <div class="px-20">
+            <div class="flex flex-col">
+                <img src="/static/img/IATA.png" height="200" width="200" class="object-cover rounded-xl h-64" alt="" />
+                <div class="font-bold py-4 text-inherit">Created 27 March 2023</div>
+                <div class="text-inherit">
+                    Je suis la pour répondre à vos questions!
+                </div>
+                <div class="main">
+                    <div class="up">
+                        <button class="card1">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero" class="instagram">
+                                <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <g transform="scale(8,8)">
+                                        <path
+                                            d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                        <button class="card2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px"
+                                class="twitter">
+                                <path
+                                    d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="down">
+                        <button class="card3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"
+                                class="github">
+                                <path
+                                    d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button class="card4">
+                            <svg height="30px" width="30px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
+                                class="discord">
+                                <path
+                                    d="M40,12c0,0-4.585-3.588-10-4l-0.488,0.976C34.408,10.174,36.654,11.891,39,14c-4.045-2.065-8.039-4-15-4s-10.955,1.935-15,4c2.346-2.109,5.018-4.015,9.488-5.024L18,8c-5.681,0.537-10,4-10,4s-5.121,7.425-6,22c5.162,5.953,13,6,13,6l1.639-2.185C13.857,36.848,10.715,35.121,8,32c3.238,2.45,8.125,5,16,5s12.762-2.55,16-5c-2.715,3.121-5.857,4.848-8.639,5.815L33,40c0,0,7.838-0.047,13-6C45.121,19.425,40,12,40,12z M17.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C21,28.209,19.433,30,17.5,30z M30.5,30c-1.933,0-3.5-1.791-3.5-4c0-2.209,1.567-4,3.5-4s3.5,1.791,3.5,4C34,28.209,32.433,30,30.5,30z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<footer>
+
+</footer>
 
 </html>
 

@@ -1,68 +1,204 @@
-.item1,
-.item2,
-.item3 {
-    position: absolute;
-    background-color: transparent;
-    left: calc(50% - (var(--size) / 2));
-    top: calc(50% - (var(--size) / 2));
-    height: var(--size);
-    width: var(--size);
+header{
+    width:100%;
+    position:fixed;
+    z-index:100;
+}
+body {
+    background: no-repeat center/100% url("/static/img/10101.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+footer {
+    width:100%;
+    position: fixed;
+    z-index:100;
+}
+
+.foot {
+}
+
+/* SPINNER LED */
+.container2 {
+    position: sticky;
+    top: 40px; left: 40px;
     border-radius: 50%;
-}
-
-.loader .item1 {
-    --size: 90px;
-    animation: size1_1 2.5s infinite alternate;
-    z-index: 1;
-}
-
-.loader .item2 {
-    --size: 60px;
-    animation: size1_2 2.5s infinite alternate;
-    z-index: 2;
-}
-
-.loader .item3 {
-    --size: 30px;
-    animation: size1_3 2.5s infinite alternate;
-    z-index: 3;
-}
-
-@keyframes size1_1 {
-
-    0%,
-    10% {
-        transform: scale(0);
+    height: 36px;
+    width: 36px;
+    animation: rotate_3922 1.2s linear infinite;
+    background-color: #9b59b6;
+    background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+  }
+  
+  .container2 span {
+    position: absolute;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: #9b59b6;
+    background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+  }
+  
+  .container2 span:nth-of-type(1) {
+    filter: blur(5px);
+  }
+  
+  .container2 span:nth-of-type(2) {
+    filter: blur(10px);
+  }
+  
+  .container2 span:nth-of-type(3) {
+    filter: blur(25px);
+  }
+  
+  .container2 span:nth-of-type(4) {
+    filter: blur(50px);
+  }
+  
+  .container2::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #fff;
+    border: solid 5px #ffffff;
+    border-radius: 50%;
+  }
+  
+  @keyframes rotate_3922 {
+    from {
+      transform: translate(-0%, -0%) rotate(0deg);
     }
-
-    100% {
-        transform: scale(1);
-        box-shadow: 8px 8px 14px #c5c5c5, -8px -8px 14px #ffffff;
+  
+    to {
+      transform: translate(-0%, -0%) rotate(360deg);
     }
-}
+  }
+  
 
-@keyframes size1_2 {
-
-    0%,
-    40% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-        box-shadow: 8px 8px 14px #c5c5c5, -8px -8px 14px #ffffff;
-    }
-}
-
-@keyframes size1_3 {
-
-    0%,
-    70% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-        box-shadow: 8px 8px 14px #c5c5c5, -8px -8px 14px #ffffff;
-    }
-}
+  /* Reseau sociaux */
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+  }
+  
+  .card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .twitter {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #03A9F4;
+  }
+  
+  .card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .github {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+  }
+  
+  .card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .discord {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #03A9F4;
+  }
+  
+  .card2:hover .twitter {
+    fill: white;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+  }
+  
+  .card3:hover .github {
+    fill: white;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+  }
+  
+  .card4:hover .discord {
+    fill: white;
+  }
