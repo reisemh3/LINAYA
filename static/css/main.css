@@ -1,7 +1,8 @@
 header{
   width:100%;
   position:fixed;
-  z-index:100;
+  background: #353535;
+  z-index:1;
 }
 body {
   background: url("/static/img/10101.png") no-repeat center center fixed;
@@ -28,11 +29,11 @@ footer {
 
 /* scrollbar message */
   .scrollable-container {
-    overflow: auto;
-    height: 80vh;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: #84cdfa #F1F1F100;
+    overflow: auto !important;
+    height: 80vh !important;
+    overflow-y: scroll !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: #84cdfa #F1F1F100 !important;
   }
 
   @media screen and (max-width: 768px) {
