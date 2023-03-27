@@ -4,7 +4,7 @@ import tensorflow as tf
 import gc
 import numpy
 from pluginFactory import PluginFactory
-from flask import Flask, render_template, Response
+from flask import Flask, jsonify, render_template, Response, request
 import cv2
 
 app = Flask(__name__)
@@ -37,18 +37,47 @@ def analyse(sentence):
 def searchAnswer(sentence, subject, typeS):
     plugin = PluginFactory.getPlugin(subject, typeS)
     return plugin.response(sentence)
-  
+
+
 @app.route('/')
 def index():
+    subjects, types, stopwords, dictionnary = tools.defaultValues()
     return render_template('index.html')
 
+# @app.route('/terminal', methods=['POST'])
+# def terminal():
+#     subjects, types, stopwords, dictionnary = tools.defaultValues()
+#     input = request.form['input']
+#     rSubject, rType, rValue = analyse(input)
+#     result = searchAnswer(input, subjects[numpy.argmax(rSubject)], types[numpy.argmax(rType)])
+#     return jsonify(result)
+
+# @app.route('/')
+# def index():
+#     subjects, types, stopwords, dictionnary = tools.defaultValues()
+#     input = request.form['input']
+#     rSubject, rType, rValue = analyse(input)
+#     result = searchAnswer(input, subjects[numpy.argmax(rSubject)], types[numpy.argmax(rType)])
+#     # return jsonify(result)
+#     return render_template('index.html')
+
+# @app.route('/terminal', methods=['POST'])
+# def terminal():
+# 	input = request.form['input']
+# 	rSubject, rType, rValue = analyse(input)
+# 	result = searchAnswer(input, subjects[numpy.argmax(rSubject)], types[numpy.argmax(rType)])
+# 	return jsonify(result)
+
 if __name__ == '__main__':
+    subjects, types, stopwords, dictionnary = tools.defaultValues()
     app.run(debug=True, host="0.0.0.0", port=5050)
-    # subjects, types, stopwords, dictionnary = tools.defaultValues()
-    # while True:
-    #     print("Tape your sentence:")
-    #     test= input()
-    #     rSubject, rType, rValue= analyse(test)
-    #     result = searchAnswer(test, subjects[numpy.argmax(rSubject)], types[numpy.argmax(rType)])
-    #     print(result)
+    while True:
+        print("Tape your sentence:")
+        test= input()
+        rSubject, rType, rValue= analyse(test)
+        result = searchAnswer(test, subjects[numpy.argmax(rSubject)], types[numpy.argmax(rType)])
+        print(result)
+    
+        
+
     

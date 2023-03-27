@@ -1,33 +1,97 @@
 header{
-    width:100%;
-    position:fixed;
-    z-index:100;
+  width:100%;
+  position:fixed;
+  z-index:100;
 }
 body {
-    background: no-repeat center/100% url("/static/img/10101.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-footer {
-    width:100%;
-    position: fixed;
-    z-index:100;
+  background: url("/static/img/10101.png") no-repeat center center fixed;
+  background-size: cover;
+  /* background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
 
-.foot {
+.popo {
+  z-index: 1;
 }
+
+footer {
+  /* width:100%;
+  position: fixed;
+  z-index:1; */
+  
+  /* position: fixed;
+  bottom: 0;
+  width: 70%;
+  color: #fff;
+  padding: 20px; */
+}
+
+/* scrollbar message */
+  .scrollable-container {
+    overflow: auto;
+    height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #84cdfa #F1F1F100;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Styles pour les écrans avec une largeur maximale de 768 pixels */
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    /* Styles pour les écrans avec une largeur maximale de 480 pixels */
+  }
+  @media screen and (min-height: 600px) {
+    /* Styles pour les écrans avec une hauteur minimale de 600 pixels */
+  }
+/****************************************************************/
+
+/* footer chatbox */
+  .foot {
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    width: 133vh;
+    padding-bottom: 20px;
+  }
+  .foot {
+    overflow: auto;
+    /* height: 80vh; */
+    /* width: 100%; */
+  }
+  .foot::-webkit-foot {
+    width: 10px;
+    height: 10px;
+  }
+  .foot::-webkit-foot-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  @media (max-width: 1080px) {
+    .foot {
+      width: 100%;
+      max-width: 1080px; /* Exemple de taille maximale en pixels */
+    }
+  }
+/****************************************************************/
+
 
 /* SPINNER LED */
-.container2 {
-    position: sticky;
-    top: 40px; left: 40px;
-    border-radius: 50%;
-    height: 36px;
-    width: 36px;
-    animation: rotate_3922 1.2s linear infinite;
-    background-color: #9b59b6;
-    background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
-  }
+  .container2 {
+      position: sticky;
+      top: 40px; left: 40px;
+      border-radius: 50%;
+      height: 36px;
+      width: 36px;
+      animation: rotate_3922 1.2s linear infinite;
+      background-color: #9b59b6;
+      background-image: linear-gradient(#9b59b6, #84cdfa, #5ad1cd);
+    }
   
   .container2 span {
     position: absolute;
@@ -62,7 +126,7 @@ footer {
     right: 10px;
     bottom: 10px;
     background-color: #fff;
-    border: solid 5px #ffffff;
+    border: solid 5px #FFFFFF;
     border-radius: 50%;
   }
   
@@ -75,9 +139,10 @@ footer {
       transform: translate(-0%, -0%) rotate(360deg);
     }
   }
+/****************************************************************/
   
 
-  /* Reseau sociaux */
+/* Reseau sociaux */
   .main {
     display: flex;
     flex-direction: column;
@@ -102,14 +167,14 @@ footer {
     outline: none;
     border: none;
     background: white;
-    border-radius: 90px 5px 5px 5px;
+    border-radius: 90px 5px 50px 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: .2s ease-in-out;
   }
   
   .instagram {
-    margin-top: 1.5em;
-    margin-left: 1.2em;
+    margin-top: 0.4em;
+    margin-left: 2em;
     fill: #cc39a4;
   }
   
@@ -119,14 +184,14 @@ footer {
     outline: none;
     border: none;
     background: white;
-    border-radius: 5px 90px 5px 5px;
+    border-radius: 5px 90px 5px 50px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: .2s ease-in-out;
   }
   
   .twitter {
-    margin-top: 1.5em;
-    margin-left: -.9em;
+    margin-top: 0.4em;
+    margin-left: 1.5em;
     fill: #03A9F4;
   }
   
@@ -136,14 +201,14 @@ footer {
     outline: none;
     border: none;
     background: white;
-    border-radius: 5px 5px 5px 90px;
+    border-radius: 5px 50px 5px 90px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: .2s ease-in-out;
   }
   
   .github {
     margin-top: -.6em;
-    margin-left: 1.2em;
+    margin-left: 2em;
   }
   
   .card4 {
@@ -152,14 +217,14 @@ footer {
     outline: none;
     border: none;
     background: white;
-    border-radius: 5px 5px 90px 5px;
+    border-radius: 50px 5px 90px 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: .2s ease-in-out;
   }
   
   .discord {
     margin-top: -.9em;
-    margin-left: -1.2em;
+    margin-left: 1.5em;
     fill: #8c9eff;
   }
   
@@ -202,3 +267,342 @@ footer {
   .card4:hover .discord {
     fill: white;
   }
+/****************************************************************/
+
+/* Animate back */
+  .socket {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+
+  .hex-brick {
+    background: #000000;
+    width: 30px;
+    height: 17px;
+    position: absolute;
+    top: 5px;
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  .h2 {
+    transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+  }
+
+  .h3 {
+    transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+  }
+
+  .gel {
+    height: 30px;
+    width: 30px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    position: absolute;
+    top: 118%;
+    left: 98%;
+  }
+
+  .center-gel {
+    margin-left: -15px;
+    margin-top: -15px;
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  .c1 {
+    margin-left: -47px;
+    margin-top: -15px;
+  }
+
+  .c2 {
+    margin-left: -31px;
+    margin-top: -43px;
+  }
+
+  .c3 {
+    margin-left: 1px;
+    margin-top: -43px;
+  }
+
+  .c4 {
+    margin-left: 17px;
+    margin-top: -15px;
+  }
+
+  .c5 {
+    margin-left: -31px;
+    margin-top: 13px;
+  }
+
+  .c6 {
+    margin-left: 1px;
+    margin-top: 13px;
+  }
+
+  .c7 {
+    margin-left: -63px;
+    margin-top: -43px;
+  }
+
+  .c8 {
+    margin-left: 33px;
+    margin-top: -43px;
+  }
+
+  .c9 {
+    margin-left: -15px;
+    margin-top: 41px;
+  }
+
+  .c10 {
+    margin-left: -63px;
+    margin-top: 13px;
+  }
+
+  .c11 {
+    margin-left: 33px;
+    margin-top: 13px;
+  }
+
+  .c12 {
+    margin-left: -15px;
+    margin-top: -71px;
+  }
+
+  .c13 {
+    margin-left: -47px;
+    margin-top: -71px;
+  }
+
+  .c14 {
+    margin-left: 17px;
+    margin-top: -71px;
+  }
+
+  .c15 {
+    margin-left: -47px;
+    margin-top: 41px;
+  }
+
+  .c16 {
+    margin-left: 17px;
+    margin-top: 41px;
+  }
+
+  .c17 {
+    margin-left: -79px;
+    margin-top: -15px;
+  }
+
+  .c18 {
+    margin-left: 49px;
+    margin-top: -15px;
+  }
+
+  .c19 {
+    margin-left: -63px;
+    margin-top: -99px;
+  }
+
+  .c20 {
+    margin-left: 33px;
+    margin-top: -99px;
+  }
+
+  .c21 {
+    margin-left: 1px;
+    margin-top: -99px;
+  }
+
+  .c22 {
+    margin-left: -31px;
+    margin-top: -99px;
+  }
+
+  .c23 {
+    margin-left: -63px;
+    margin-top: 69px;
+  }
+
+  .c24 {
+    margin-left: 33px;
+    margin-top: 69px;
+  }
+
+  .c25 {
+    margin-left: 1px;
+    margin-top: 69px;
+  }
+
+  .c26 {
+    margin-left: -31px;
+    margin-top: 69px;
+  }
+
+  .c27 {
+    margin-left: -79px;
+    margin-top: -15px;
+  }
+
+  .c28 {
+    margin-left: -95px;
+    margin-top: -43px;
+  }
+
+  .c29 {
+    margin-left: -95px;
+    margin-top: 13px;
+  }
+
+  .c30 {
+    margin-left: 49px;
+    margin-top: 41px;
+  }
+
+  .c31 {
+    margin-left: -79px;
+    margin-top: -71px;
+  }
+
+  .c32 {
+    margin-left: -111px;
+    margin-top: -15px;
+  }
+
+  .c33 {
+    margin-left: 65px;
+    margin-top: -43px;
+  }
+
+  .c34 {
+    margin-left: 65px;
+    margin-top: 13px;
+  }
+
+  .c35 {
+    margin-left: -79px;
+    margin-top: 41px;
+  }
+
+  .c36 {
+    margin-left: 49px;
+    margin-top: -71px;
+  }
+
+  .c37 {
+    margin-left: 81px;
+    margin-top: -15px;
+  }
+
+  .r1 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .2s;
+  }
+
+  .r2 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .4s;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .4s;
+  }
+
+  .r3 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .6s;
+    -webkit-animation-name: pulse00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .6s;
+  }
+
+  .r1 > .hex-brick {
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .2s;
+  }
+
+  .r2 > .hex-brick {
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .4s;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .4s;
+  }
+
+  .r3 > .hex-brick {
+    animation-name: fade00;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: .6s;
+    -webkit-animation-name: fade00;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: .6s;
+  }
+
+  @keyframes pulse00 {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    50% {
+      -webkit-transform: scale(0.01);
+      transform: scale(0.01);
+    }
+
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fade00 {
+    0% {
+      background: #252525;
+    }
+
+    50% {
+      background: #000000;
+    }
+
+    100% {
+      background: #353535;
+    }
+  }
+/****************************************************************/
+
