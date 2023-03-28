@@ -39,6 +39,23 @@
             // Affiche la date et l'heure dans la balise ayant l'id "date-heure"
             document.getElementById("date-heure").innerHTML = "Le " + dateHeure;
         }
+
+        // Récupérer la div d'affichage des messages
+        var messagesDiv = document.getElementById("messages");
+
+        // Ajouter un nouveau message à la div
+        function addMessage(message) {
+            var messageElement = document.createElement("p");
+            messageElement.innerHTML = message;
+            messagesDiv.appendChild(messageElement);
+        }
+
+        // Ajouter une nouvelle réponse à la div
+        function addResponse(response) {
+            var responseElement = document.createElement("p");
+            responseElement.innerHTML = response;
+            messagesDiv.appendChild(responseElement);
+        }
     </script>
 
     <script src="//code.jquery.com/jquery-1.11.1.js"></script>
@@ -112,6 +129,21 @@
                             <img src="/static/img/IATA.png" class="rounded-full h-14 w-14" alt="">
                             <div class="flex flex-col space-y-1">
                                 <span class="font-bold">Iatanori BOT</span>
+                                <div class="text-sm">{{ output|safe }}</div>
+                            </div>
+                        </div>
+                        <div class="flex-none px-4 py-2 text-stone-600 text-xs md:text-sm">
+                            Hello World!
+                        </div>
+                    </div>
+                    <!-- Item -->
+
+                    <!-- Item -->
+                    <div class="flex justify-between py-6 px-4 bg-white opacity-80 rounded-lg">
+                        <div class="flex items-center space-x-4">
+                            <img src="/static/img/IATA.png" class="rounded-full h-14 w-14" alt="">
+                            <div class="flex flex-col space-y-1">
+                                <span class="font-bold">Iatanori BOT</span>
                                 <div class="text-sm">{{ response }}</div>
                             </div>
                         </div>
@@ -126,6 +158,7 @@
                 <!-- MessageBOX  max-w-2xl space-y-4-->
                 <div class="mx-auto foot">
                     <div id="response"></div>
+                    <div id="messages"></div>
 
                     <form id="message" action="/" method="POST" onsubmit="sendMessage(); return false;"
                         class="flex items-center py-2 px-3 bg-gray-50 rounded-lg dark:bg-gray-700">
@@ -144,6 +177,11 @@
                 <!-- Fermeture MessageBOX -->
             </div>
             <!-- TEST -->
+            <div class="messages">
+                {% for message in messages %}
+                <p>{{ message }}</p>
+                {% endfor %}
+            </div>
 
             <!-- FIn DU TEST -->
         </div>

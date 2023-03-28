@@ -9,10 +9,11 @@ import numpy
 from pluginFactory import PluginFactory
 from flask import Flask, jsonify, render_template, Response, request
 import cv2
+import subprocess
 
 app = Flask(__name__)
-CORS(app)
-app.config['SECRET_KEY'] = 'secret!'
+# CORS(app)
+# app.config['SECRET_KEY'] = 'secret!'
 # socketio = SocketIO(app, async_handlers=True)
 # socketio.run(app)
 
@@ -44,6 +45,15 @@ def searchAnswer(sentence, subject, typeS):
     plugin = PluginFactory.getPlugin(subject, typeS)
     return plugin.response(sentence)
 
+# messages = []
+
+# def searchAnswer(sentence, subject, typeS):
+#     global messages
+#     plugin = PluginFactory.getPlugin(subject, typeS)
+#     response, terminal_messages = plugin.response(sentence)
+#     messages += terminal_messages
+#     return response, messages
+
 # @app.route('/')
 # def index():
 #     return render_template('index.html')
@@ -53,6 +63,20 @@ def searchAnswer(sentence, subject, typeS):
 #     print(message)
 #     response = 'Bonjour, vous avez envoyé le message suivant: ' + message['data']
 #     emit('response', response)
+
+# @app.route('/', methods=['POST', 'GET'])
+# def index():
+#     global messages
+#     subjects, types, stopwords, dictionnary = tools.defaultValues()
+#     if request.method == 'POST':
+#         sentence = request.form['message']
+#         rSubject, rType, rValue = analyse(sentence)
+#         result, messages = searchAnswer(sentence, subjects[numpy.argmax(rSubject)], types[numpy.argmax(rType)])
+#         return render_template('index.html', message=sentence, response=result, messages=messages)
+#     else:
+#         # On la première requête GET, messages est vide donc on l'initialise avec un message d'accueil
+#         # messages = ["Bienvenue sur notre chatbot ! Posez-nous une question et nous vous aiderons à trouver la réponse."]
+#         return render_template('index.html', messages=messages)
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
