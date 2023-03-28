@@ -27,6 +27,42 @@ footer {
   padding: 20px; */
 }
 
+/* TEXT DESIGN */
+  .text-focus-in {
+    -webkit-animation: text-focus-in 2s ease-out both;
+            animation: text-focus-in 2s ease-out both;
+  }
+  /**
+  * ----------------------------------------
+  * animation text-focus-in
+  * ----------------------------------------
+  */
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+/****************************************************************/
+
 /* scrollbar message */
   .scrollable-container {
     overflow: auto !important;
