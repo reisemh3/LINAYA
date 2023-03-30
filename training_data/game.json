@@ -1,0 +1,178 @@
+[
+    {
+    "subject":"YakuzaFirstGame",
+    "sentences": ["Par quel jeu as-tu commencé la série Yakuza?", "Tu me conseilles de commencer par quel jeu de la série Yakuza?"],
+    "responses": ["Honnêtement, je te conseille de commencer par Yakuza Kiwami, un remake du 1. C'est un bon point de départ pour découvrir la série."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"YakuzaBestGame",
+    "sentences": ["Quel est ton Yakuza préféré?", "Quel est le meilleur Yakuza selon toi?"],
+    "responses": ["Je suis peut-être un peu biaisé, mais je dirais Yakuza 0. C'est le jeu qui m'a le plus marqué."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"YakuzaPreferedCharacter",
+    "sentences": ["Qui est ton personnage préféré dans la série Yakuza?", "Quel est ton personnage préféré dans la série Yakuza?", "Qui est ton perso préféré dans Yakuza?"],
+    "responses": ["Je dirais Majima. Il est tellement badass avec son style de combat et son attitude.", "Je dirais Kiryu. Il est très posé et calme, il est aussi très fort."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"ZeldaFirstGame",
+    "sentences": ["Par quel jeu as-tu commencé la série Zelda?", "Tu me conseilles de commencer par quel jeu de la série Zelda?"],
+    "responses": ["J'pense que tu devrais commencer par Ocarina of Time. Il  est assez complexe sans trop l'être.",
+                  "J'pense que tu devrais commencer par Twilight Princess. Il est très sombre et mature cependant."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"ZeldaPreferedMusicOOT",
+    "sentences": ["Quelle est ta musique préférée dans Ocarina of Time?", "Quelle est ta musique préférée dans OoT?"],
+    "responses": ["J'aime beaucoup le nocturne de l'ombre.","Le thème de la tour de Ganondorf est vraiment bon."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"ZeldaPreferedCharacter",
+    "sentences": ["Qui est ton personnage préféré dans la série Zelda?", "Quel est ton personnage préféré dans la série Zelda?", "Qui est ton perso préféré dans Zelda?"],
+    "responses": ["Link de Twilight Princess ! Son système de combat est vraiment cool.", 
+                  "Ganondorf d'Ocarina of Time, j'ai peut être un petit problème avec les orgues."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"ZeldaPreferedGame",
+    "sentences": ["Quel est ton Zelda préféré?", "Quel est le meilleur Zelda selon toi?"],
+    "responses": ["J'pense que c'est Twilight Princess. Le scénario est vraiment bien écrit. Le système de combat, avec les bottes secrètes, est magnifique."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"ZeldaPreferedBoss",
+    "sentences": ["Quel est ton boss préféré dans la série Zelda?", "Quel est ton boss préféré dans Zelda?"],
+    "responses": ["Alors, Ganondorf dans Twilight Princess. Les combats contre lui sont vraiment bien pensés.",
+                  "Volcania dans Ocarina of Time. J'aime bien le design de ce boss."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"MGSFirstGame",
+    "sentences": ["Par quel jeu as-tu commencé la série MGS?", "Tu me conseilles de commencer par quel jeu de la série Metal Gear Solid?"],
+    "responses": ["C'est compliqué de te conseiller un ordre dans la série. Soit tu fais les jeux dans l'ordre de sortie, soit tu fais les jeux dans l'ordre chronologique.",
+                  "Je te conseille de commencer par Metal Gear Solid 3. C'est le meilleur jeu de la série selon moi."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"MGS3BestWeapon",
+    "sentences": ["Quelle est ton arme préférée dans MGS3?", "Quelle est ton arme préférée dans Metal Gear Solid 3?"],
+    "responses": ["Le saint Patriot. C'est une arme qui est vraiment puissante et qui est très utile dans le jeu.",
+                  "Aucune en soit, le CQC est vraiment bien pour le coté sneaky."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"MGSPreferedCharacter",
+    "sentences": ["Qui est ton personnage préféré dans la série Metal Gear Solid?", "Quel est ton personnage préféré dans Metal Gear Solid?", "Qui est ton perso préféré dans MGS?"],
+    "responses": ["Je dirais Snake. Pas très original, mais c'est de loin mon personnage préféré dans la série.",
+                  "Je dirais Sigint. J'aime beaucoup son humour et son attitude dans le 3."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframePreferedWarframe",
+    "sentences": ["Quel est ta Warframe préférée?", "Quel est ta Warframe préférée dans Warframe?"],
+    "responses": ["Je dirais Excalibur. Il est vraiment puissant et polyvalent.",
+                  "Je dirais Gauss, il est vraiment fun à jouer avec son gameplay nerveux."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframePreferedMainWeapon",
+    "sentences": ["Quelle est ton arme principale préférée dans Warframe?", "Tu préfères quelle arme principale dans Warframe?", "Quelle est ton arme préférée dans Warframe?"],
+    "responses": ["Le Fulmin, c'est une arme assez puissante et elle a l'avantage de ne pas avoir de chargeur à recharger avec des munitions.",
+                  "Le Corinth est vraiment puissant et il est très utile pour clear les salles."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframePreferedSecondaryWeapon",
+    "sentences": ["Quelle est ton arme secondaire préférée dans Warframe?", "Tu préfères quelle arme secondaire dans Warframe?"],
+    "responses": ["Le Nukor kuva, c'est une arme vraiment utile pour les ennemis tanky."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframePreferedMeleeWeapon",
+    "sentences": ["Quelle est ton arme de mélee préférée dans Warframe?", "Tu préfères quelle arme de mélée dans Warframe?", "Une bonne arme de corps à corps, CAQ, dans warframe ?"],
+    "responses": ["Même si elle est un peu lente, je dirais la Gram Prime. Elle mets des dégâts monstrueux.", 
+                  "Je dirais la Reaper Prime. J'aime beaucoup le design de cette arme et son gameplay  avec une certaine posture."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframeBestSurvivalFrame",
+    "sentences": ["Quelle est la meilleure Warframe pour survivre dans Warframe?", "Quelle est la meilleure Warframe pour les survies?", "Une bonne frame pour les survies ?"],
+    "responses": ["Je dirais Nidus. Il est vraiment puissant et il a un bon kit de survie.",
+                  "Je dirais Octavia. Elle est vraiment puissante avec un bon mod set, son maillet attire les ennemis et son metronome permet à Octavia de se cacher.",
+                  "Je dirais Inaros. C'est un vrai sac à points de vie, avec une arcane grace complète il résiste à toute les attaques faibles, les infestés ont raison de lui.",
+                  "Je dirais Gauss, son bouclier cinétique le rend très très résistant. Il faut juste faire gaffe à son énergie et le temps d'activation des pouvoirs."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframeBestMobileDefenseFrame",
+    "sentences": ["Quelle est la meilleure Warframe pour les défenses mobiles dans Warframe?", "Quelle est la meilleure Warframe pour les défenses mobiles?", "Une bonne frame pour les défenses mobiles ?"],
+    "responses": ["Oberon est bon pour les défenses mobiles. Ses zones radioactives sont vraiment utiles pour les ennemis qui arrivent en masse.",
+                  "Mesa peut clear les ennemis très rapidement les ennemis qui arrivent, avant même qu'ils n'arrivent."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframeBestDefenseFrame",
+    "sentences": ["Quelle est la meilleure Warframe pour défendre dans Warframe?", "Quelle est la meilleure Warframe pour les défenses?", "Une bonne frame pour les défenses ?"],
+    "responses": ["Mesa est pas mal pour les défenses. Elle peut clear les ennemis très facilement",
+                  "Oberon est vraiment bon pour les défenses. Ses zones radioactives sont vraiment utiles pour les ennemis qui arrivent en masse.",
+                  "Limbo est utile avec sa faille pour les défenses. Il peut litéralement stopper les ennemis dans avec sa bubulle."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframeBestExterminateFrame",
+    "sentences": ["Quelle est la meilleure Warframe pour exterminer dans Warframe?", "Quelle est la meilleure Warframe pour les exterminations?", "Une bonne frame pour les exterminations ?"],
+    "responses": ["Mesa est vraiment puissante pour les exterminations. Elle peut clear les ennemis très facilement.",
+                  "Excalibur peut être utilisé pour les exterminations. Sa polyvalence lui permet de faire face à tous les types d'ennemis avec un bon mod set.",
+                  "Gauss est plutôt bon pour les exterminations. Il peut éliminer les ennemis très rapidement avec son sprint.",
+                  "Saryn peut élimer les ennemis très rapidement avec son virus. Elle peut aussi utiliser son 4 pour tuer les ennemis infectés."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframeBestSpyFrame",
+    "sentences": ["Quelle est la meilleure Warframe pour les infiltrations dans Warframe?", "Quelle est la meilleure Warframe pour les infiltrations?", "Une bonne frame pour les infiltrations ?"],
+    "responses": ["Ivara est vraiment utile pour les infiltrations. Elle peut se camoufler et se déplacer très rapidement.",
+                  "Gauss peut être utilisé pour les infiltrations. Sa vitesse peut lui permettre de se faufiler derrière les ennemis et de les éliminer."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframeBestCaptureFrame",
+    "sentences": ["Quelle est la meilleure Warframe pour les captures?", "Une bonne frame pour les captures ?"],
+    "responses": ["Excalibur Umbra est un bon choix pour les captures. En opérateur, il est autonome et il peut éliminer les ennemis très rapidement.",
+                  "Gauss est un bon choix pour les captures. Il peut aller éliminer les ennemis très rapidement avec son sprint."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframeAdequateDmgGrineer",
+    "sentences": ["Quel est le type de dégat le plus adapté aux Grineers", "Le bon type de dégat pour les grineers?"],
+    "responses": ["Mieux vaut utiliser des dégâts perforants et corrosifs contre les Grineers. Ils sont très résistants aux dégâts physiques."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframeAdequateDmgCorpus",
+    "sentences": ["Quel est le type de dégat le plus adapté aux Corpus", "Le bon type de dégat pour les corpus?"],
+    "responses": ["Utilise des dégâts magnétiques contre les Corpus. Ca abaissera leur bouclier."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframeAdequateDmgInfested",
+    "sentences": ["Quel est le type de dégat le plus adapté aux Infestés", "Le bon type de dégat pour les infestés?"],
+    "responses": ["Les infestés sont très faibles aux dégâts viraux. Ils n'ont que de la vie pure."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframeAdequateDmgCorrupted",
+    "sentences": ["Quel est le type de dégat le plus adapté aux Corrompus", "Le bon type de dégat pour les corrompus?"],
+    "responses": ["Les Corrompus viennent de toutes les factions. Essaie les dégâts bruts du néant, vu que tu peux pas tout prévoir."],
+    "value": 1,
+    "type":"question"
+},{
+    "subject":"WarframeAdequateDmgSentient",
+    "sentences": ["Quel est le type de dégat le plus adapté aux Sentients", "Le bon type de dégat pour les Sentients?"],
+    "responses": ["Les Sentients sont très résistants aux dégâts de statut généraux. Utilise des dégâts bruts du néant pour être efficace."],
+    "value": 1,
+    "type":"question"
+}]

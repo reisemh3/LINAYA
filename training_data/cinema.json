@@ -1,7 +1,7 @@
 [{
     "subject":"bestFilm",
     "sentences": ["C'est quoi tes films favoris?", "Dis moi des films que tu aimes bien?"],
-    "responses": ["Inception, CHAPI des bons films d'IA"],
+    "responses": ["J'aime beaucoup les vieux films français comme les De Funès."],
     "value": 2,
     "type":"question"
 },{
@@ -13,19 +13,19 @@
 },{
     "subject":"kindBadFilm",
     "sentences": ["Quelles genres de films tu détestes?"],
-    "responses": ["Horreur, Romance"],
+    "responses": ["Horreur et Romance, l'eau de rose c'est pas mon truc."],
     "value": -1,
     "type":"question"
 },{
     "subject":"hero",
-    "sentences": ["Quel est ton héro préféré?"],
+    "sentences": ["Quel est ton héros préféré?"],
     "responses": ["J'hésite entre iron man ou spider-man"],
     "value": -1,
     "type":"question"
 },{
     "subject":"ironman",
     "sentences": ["Qui est ironman?", "Pourquoi iron man?"],
-    "responses": ["Iron man ou Tony Stark est le meuilleur héro car comme Batman ce n'est pas ces pouvoirs mais son tallent qui est mis en avant."],
+    "responses": ["Iron man ou Tony Stark est un héros qui tire ses capacités de son génie scientifique."],
     "value": 1,
     "type":"question"
 },{
