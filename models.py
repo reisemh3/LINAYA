@@ -58,21 +58,21 @@ if __name__ == '__main__':
     outputV= outputV + outputV2
 
     modelSubjects= getModelSubjects(dictionnary, subjects)
-    modelSubjects.fit(input, outputS, n_epoch=len(input), batch_size=len(subjects), show_metric=True)
+    modelSubjects.fit(input, outputS, n_epoch=len(input)*2, batch_size=len(subjects), show_metric=True)
     modelSubjects.save("data/modelSubjects.tflearn")
     tf.keras.backend.clear_session()
     del modelSubjects
     gc.collect()
 
     modelTypes= getModelTypes(dictionnary, types)
-    modelTypes.fit(input, outputT, n_epoch=len(input), batch_size=len(subjects), show_metric=True)
+    modelTypes.fit(input, outputT, n_epoch=len(input)*2, batch_size=len(subjects), show_metric=True)
     modelTypes.save("data/modelTypes.tflearn")
     tf.keras.backend.clear_session()
     del modelTypes
     gc.collect()
 
     modelValues= getModelValues(dictionnary)
-    modelValues.fit(input, numpy.array(outputV).reshape(-1,1), n_epoch=len(input), batch_size=len(subjects), show_metric=True)
+    modelValues.fit(input, numpy.array(outputV).reshape(-1,1), n_epoch=len(input)*2, batch_size=len(subjects), show_metric=True)
     modelValues.save("data/modelValues.tflearn")
     tf.keras.backend.clear_session()
     del modelValues

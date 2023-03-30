@@ -1,6 +1,6 @@
 [{
     "subject":"launchGame",
-    "sentences": ["Lance (.*)", "Démarre (.*)", "Allume (.*)"],
+    "sentences": ["Démarre moi (.*)", "Lance moi (.*)", "Lance moi le jeu (.*)"],
     "responses": [""],
     "value": 0,
     "type":"action"

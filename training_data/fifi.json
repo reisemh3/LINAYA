@@ -1,0 +1,263 @@
+[
+    {
+        "subject": "venom",
+        "sentences": [
+            "Quelle est ton film du MCU que tu as le moins bien aimé?"
+        ],
+        "responses": [
+            "VENOM null, null, null, archi null"
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "intelligence artificielle",
+        "sentences": [
+            "Qu'est-ce que l'intelligence artificielle?",
+            "Comment fonctionne l'intelligence artificielle?",
+            "Quelles sont les applications de l'intelligence artificielle?"
+        ],
+        "responses": [
+            "L'intelligence artificielle (IA) est une branche de l'informatique qui vise à créer des machines capables de simuler l'intelligence humaine. Elle fonctionne grâce à des algorithmes et des modèles mathématiques qui permettent de traiter des données et de prendre des décisions en se basant sur des règles et des exemples. Les applications de l'IA sont très variées, allant de la reconnaissance vocale et d'image à la prédiction de comportements et à la création d'œuvres d'art."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "chatbots",
+        "sentences": [
+            "Qu'est-ce qu'un chatbot?",
+            "Comment fonctionne un chatbot?",
+            "Quelles sont les applications des chatbots?"
+        ],
+        "responses": [
+            "Un chatbot est un programme informatique conçu pour simuler une conversation avec un être humain. Il fonctionne grâce à des algorithmes d'apprentissage automatique et de traitement du langage naturel qui lui permettent de comprendre les requêtes des utilisateurs et d'y répondre de manière pertinente. Les chatbots sont utilisés dans de nombreux domaines, notamment le service client, le commerce électronique et l'assistance virtuelle."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Disney",
+        "sentences": [
+            "Parle moi de Disney",
+            "Quand est-ce que Disney a été fondé ?",
+            "Quels sont les films les plus populaires de Disney ?",
+            "Comment Disney gère-t-il sa propriété intellectuelle ?"
+        ],
+        "responses": [
+            "Disney a été fondé en 1923 par Walt Disney et son frère Roy Disney. Les films les plus populaires de Disney incluent 'Le Roi Lion', 'La Petite Sirène', 'La Reine des neiges' et 'Toy Story'. Disney gère sa propriété intellectuelle en protégeant ses marques et ses droits d'auteur, et en exploitant ses franchises à travers une gamme de produits dérivés, d'expériences de parcs à thème et de médias. Il s'agit d'une stratégie de diversification qui lui permet de maximiser la valeur de ses propriétés intellectuelles."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Disney+",
+        "sentences": [
+            "Parle moi de Disney+",
+            "Quels sont les contenus disponibles sur Disney+ ?",
+            "Combien coûte Disney+ ?",
+            "Comment fonctionne Disney+ ?"
+        ],
+        "responses": [
+            "Disney+ propose un large éventail de contenus, notamment des films et des séries de Disney, Pixar, Marvel, Star Wars et National Geographic. Le service est disponible en streaming pour un abonnement mensuel ou annuel. En France, l'abonnement mensuel est de 8,99 € et l'abonnement annuel est de 89,90 €. Disney+ fonctionne sur plusieurs plates-formes, notamment les ordinateurs de bureau, les téléviseurs intelligents, les tablettes et les smartphones, avec des applications dédiées pour chaque plate-forme."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Disneyland Paris",
+        "sentences": [
+            "Parle moi de Disneyland Paris",
+            "Quand Disneyland Paris a-t-il ouvert ?",
+            "Combien de parcs à thème y a-t-il à Disneyland Paris ?",
+            "Quelles sont les attractions les plus populaires de Disneyland Paris ?"
+        ],
+        "responses": [
+            "Disneyland Paris a ouvert ses portes en 1992. Il y a deux parcs à thème à Disneyland Paris : le Parc Disneyland et le Parc Walt Disney Studios. Les attractions les plus populaires de Disneyland Paris incluent 'Space Mountain : Mission 2', 'It's a Small World', 'Big Thunder Mountain' et 'Pirates of the Caribbean'. Disneyland Paris propose également une gamme de spectacles en direct et de divertissements pour toute la famille."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Disneyland Paris",
+        "sentences": [
+            "Parle moi de Disneyland Paris",
+            "Combien coûte l'entrée à Disneyland Paris ?",
+            "Comment se rendre à Disneyland Paris en transport en commun ?",
+            "Où puis-je trouver des informations sur les offres spéciales pour Disneyland Paris ?"
+        ],
+        "responses": [
+            "Le prix d'entrée à Disneyland Paris varie en fonction de la période de l'année et du type de billet choisi. Le billet d'entrée standard pour une journée pour un adulte coûte environ 89 €, mais il y a des offres spéciales pour les enfants, les seniors et les groupes. Pour se rendre à Disneyland Paris en transport en commun, vous pouvez prendre le RER ligne A et descendre à la station 'Marne-la-Vallée/Chessy', qui est située juste à l'entrée du parc. Pour trouver des informations sur les offres spéciales pour Disneyland Paris, vous pouvez consulter le site web officiel de Disneyland Paris ou contacter le service client."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Netflix",
+        "sentences": [
+            "Parle moi de Netflix",
+            "Qu'est-ce que Netflix ?",
+            "Combien coûte l'abonnement Netflix ?",
+            "Quels sont les types de contenus disponibles sur Netflix ?"
+        ],
+        "responses": [
+            "Netflix est une plateforme de streaming vidéo qui propose des films, des séries TV, des documentaires et des émissions pour enfants. Netflix est disponible dans le monde entier, et vous pouvez y accéder sur votre ordinateur, votre télévision, votre tablette ou votre smartphone. Le coût de l'abonnement Netflix varie en fonction du forfait que vous choisissez. Les forfaits mensuels commencent à partir de 7,99 € et vont jusqu'à 17,99 € pour le forfait premium. Les types de contenus disponibles sur Netflix comprennent des séries TV originales de Netflix, des films et des documentaires, ainsi que des contenus pour enfants et des programmes de télévision acquis auprès de distributeurs tiers."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Netflix",
+        "sentences": [
+            "Parle moi de Netflix",
+            "Comment fonctionne le système de recommandations Netflix ?",
+            "Est-ce que Netflix propose des téléchargements pour une visualisation hors ligne ?",
+            "Quels sont les appareils compatibles avec Netflix ?"
+        ],
+        "responses": [
+            "Le système de recommandations Netflix utilise un algorithme qui analyse votre historique de visualisation et vos préférences pour vous recommander des contenus similaires. Vous pouvez également noter les contenus que vous avez aimés ou pas aimés pour aider à affiner les recommandations. Oui, Netflix propose une fonctionnalité de téléchargement qui vous permet de télécharger des contenus pour une visualisation hors ligne. Cela peut être pratique lorsque vous n'avez pas accès à une connexion Internet fiable ou si vous voulez regarder des contenus en déplacement. Netflix est compatible avec un large éventail d'appareils, notamment les téléviseurs intelligents, les consoles de jeux, les smartphones, les tablettes et les ordinateurs portables."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Batman",
+        "sentences": [
+            "Parle moi de Batman",
+            "Qui est Batman ?",
+            "Comment Batman est-il devenu Batman ?",
+            "Quels sont les ennemis de Batman ?"
+        ],
+        "responses": [
+            "Batman est un super-héros de bande dessinée créé par Bob Kane et Bill Finger. Il est apparu pour la première fois dans Detective Comics #27 en 1939. Batman est le super-héros alter ego de Bruce Wayne, un riche playboy de Gotham City qui est témoin du meurtre de ses parents dans une ruelle alors qu'il était enfant. Déterminé à faire régner la justice dans la ville, Wayne décide de se consacrer à l'apprentissage des techniques de combat et de la criminalistique pour devenir Batman. Les ennemis de Batman comprennent des criminels célèbres tels que le Joker, le Pingouin, Double-Face, l'Épouvantail, Harley Quinn et bien d'autres encore."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Batman",
+        "sentences": [
+            "Parle moi de Batman",
+            "Quels sont les gadgets de Batman ?",
+            "Quel est le rôle de Robin auprès de Batman ?",
+            "Qui est l'allié de Batman au sein de la police de Gotham City ?"
+        ],
+        "responses": [
+            "Les gadgets de Batman comprennent une variété d'outils et d'armes sophistiqués tels que le Batarang, le Bat-grappin, le Batmobile, le Bat-planeur, la Bat-cave et bien plus encore. Ces gadgets aident Batman dans ses missions de lutte contre le crime à Gotham City. Robin est le partenaire de Batman et est souvent représenté comme son acolyte. Robin aide Batman dans ses missions et apporte une touche de légèreté et d'humour à l'univers de Batman. L'allié de Batman au sein de la police de Gotham City est le commissaire Jim Gordon, qui travaille avec Batman pour lutter contre le crime dans la ville."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Marvel",
+        "sentences": [
+            "Parle moi de Marvel",
+            "Qui sont les Avengers ?",
+            "Quel est l'ordre chronologique des films de l'univers cinématographique Marvel ?",
+            "Quel est le pouvoir de Thanos ?"
+        ],
+        "responses": [
+            "Les Avengers sont un groupe de super-héros créé par Marvel Comics. L'équipe a été fondée par Iron Man, Thor, Hulk, Ant-Man et la Guêpe. D'autres membres ont rejoint l'équipe au fil des ans, notamment Captain America, Hawkeye, Black Widow et bien d'autres encore. L'ordre chronologique des films de l'univers cinématographique Marvel (MCU) commence par Captain America: The First Avenger (1942-1945), puis Iron Man (2010), Iron Man 2 (2011), L'incroyable Hulk (2011), Thor (2011), Avengers (2012), Iron Man 3 (2012), Thor: Le Monde des Ténèbres (2013), Captain America: Le Soldat de l'Hiver (2014), Les Gardiens de la Galaxie (2014), Avengers : L'Ère d'Ultron (2015), Ant-Man (2015), Captain America: Civil War (2016), Doctor Strange (2016), Les Gardiens de la Galaxie Vol. 2 (2017), Spider-Man: Homecoming (2017), Thor : Ragnarok (2017), Black Panther (2018), Avengers: Infinity War (2018), Ant-Man et la Guêpe (2018), Captain Marvel (2019), Avengers: Endgame (2019) et Spider-Man: Far From Home (2019). Le pouvoir de Thanos est le gant de l'infini, qui lui permet de manipuler la réalité, l'espace, le temps et la vie elle-même. Avec le gant de l'infini, Thanos peut devenir invincible et contrôler l'univers entier."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Marvel",
+        "sentences": [
+            "Parle moi de Marvel",
+            "Qui sont les X-Men ?",
+            "Quels sont les pouvoirs de Wolverine ?",
+            "Qui est le méchant principal dans les films X-Men ?"
+        ],
+        "responses": [
+            "Les X-Men sont une équipe de super-héros créée par Marvel Comics. Les membres les plus connus de l'équipe comprennent le Professeur X, Cyclope, Wolverine, Tornade, Jean Grey et Iceberg. Les X-Men sont des mutants, c'est-à-dire des êtres humains qui ont des capacités surhumaines dues à une mutation génétique. Les pouvoirs de Wolverine comprennent une régénération accélérée, des griffes en adamantium rétractables dans les mains, des sens améliorés et une force et une agilité surhumaines. Le méchant principal dans les films X-Men est Magnéto, un mutant qui peut contrôler les champs magnétiques et qui est souvent en conflit avec les X-Men en raison de sa croyance que les mutants sont supérieurs aux humains."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "DC Comics",
+        "sentences": [
+            "Parle moi de DC Comics",
+            "Qui sont les membres de la Justice League ?",
+            "Quel est l'ordre chronologique des films DC ?",
+            "Quels sont les pouvoirs de Superman ?"
+        ],
+        "responses": [
+            "La Justice League est une équipe de super-héros créée par DC Comics. Les membres les plus connus de l'équipe comprennent Superman, Batman, Wonder Woman, The Flash, Green Lantern, Aquaman et Martian Manhunter. L'ordre chronologique des films DC commence par Man of Steel (2013), puis Batman v Superman: Dawn of Justice (2016), Suicide Squad (2016), Wonder Woman (2017), Justice League (2017), Aquaman (2018), Shazam! (2019), Birds of Prey (2020), Wonder Woman 1984 (2020) et The Suicide Squad (2021). Les pouvoirs de Superman comprennent une force et une vitesse surhumaines, une vision thermique, une super ouïe, une super respiration et la capacité de voler. Il est également invulnérable aux balles, aux explosions et à la plupart des attaques physiques."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "DC Comics",
+        "sentences": [
+            "Parle moi de DC Comics",
+            "Qui sont les membres de la Suicide Squad ?",
+            "Quel est l'antagoniste principal dans les films DC ?",
+            "Quel est le pouvoir de Flash ?"
+        ],
+        "responses": [
+            "La Suicide Squad est une équipe de super-vilains créée par DC Comics. Les membres les plus connus de l'équipe comprennent Harley Quinn, Deadshot, Captain Boomerang, Killer Croc et El Diablo. L'antagoniste principal dans les films DC est souvent Lex Luthor, un riche industriel et génie du mal qui est souvent en conflit avec Superman et les autres héros DC. Le pouvoir de Flash est la super-vitesse. Il peut courir à des vitesses incroyables, éviter les balles et les explosions, et même voyager dans le temps."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Harry Potter",
+        "sentences": [
+            "Parle moi de Harry Potter",
+            "Quels sont les noms des trois enfants de Ron et Hermione ?",
+            "Quels sont les titres des sept livres de Harry Potter ?",
+            "Qu'est-ce que le vif d'or ?"
+        ],
+        "responses": [
+            "Les noms des trois enfants de Ron et Hermione sont Rose, Hugo et Scorpius. Les titres des sept livres de Harry Potter sont : Harry Potter à l'école des sorciers, Harry Potter et la Chambre des secrets, Harry Potter et le Prisonnier d'Azkaban, Harry Potter et la Coupe de feu, Harry Potter et l'Ordre du Phénix, Harry Potter et le Prince de sang-mêlé, et Harry Potter et les Reliques de la Mort. Le vif d'or est une petite balle dorée ailée utilisée dans le jeu de Quidditch. Le but du jeu est d'attraper le vif d'or, qui vaut 150 points, pour mettre fin au match."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Harry Potter",
+        "sentences": [
+            "Parle moi de Harry Potter",
+            "Qui sont les quatre fondateurs de Poudlard ?",
+            "Quel est le nom complet de Voldemort ?",
+            "Qu'est-ce que le sortilège d'Imperium ?"
+        ],
+        "responses": [
+            "Les quatre fondateurs de Poudlard sont Godric Gryffondor, Helga Poufsouffle, Rowena Serdaigle et Salazar Serpentard. Le nom complet de Voldemort est Tom Elvis Jedusor (avant qu'il ne change son nom). Le sortilège d'Imperium est un sortilège impardonnable qui permet au lanceur de prendre le contrôle de l'esprit de la personne ciblée, la transformant en marionnette sous ses ordres."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Steam",
+        "sentences": [
+            "Parle moi de Steam",
+            "Qu'est-ce que Steam ?",
+            "Comment acheter un jeu sur Steam ?",
+            "Comment ajouter un ami sur Steam ?"
+        ],
+        "responses": [
+            "Steam est une plateforme de distribution de jeux vidéo en ligne, créée par Valve Corporation. Pour acheter un jeu sur Steam, il faut d'abord télécharger et installer le client Steam, puis créer un compte. Une fois connecté, il suffit de parcourir le catalogue de jeux, choisir celui que l'on souhaite acheter, et cliquer sur le bouton Acheter. On peut alors payer avec une carte bancaire, un compte PayPal ou une carte prépayée. Pour ajouter un ami sur Steam, il suffit de cliquer sur le bouton 'Ajouter un ami' en haut à droite de la fenêtre de Steam, puis de saisir le nom de l'utilisateur ou son adresse e-mail associée à son compte Steam. On peut également rechercher des amis en utilisant leur identifiant Steam ou leur profil public."
+        ],
+        "value": 1,
+        "type": "question"
+    },
+    {
+        "subject": "Steam",
+        "sentences": [
+            "Parle moi de Steam",
+            "Quels sont les avantages de l'abonnement Steam ?",
+            "Comment obtenir une clé d'activation pour un jeu sur Steam ?",
+            "Comment créer une liste de souhaits sur Steam ?"
+        ],
+        "responses": [
+            "L'abonnement Steam permet de bénéficier de nombreux avantages, comme des réductions sur les jeux, des accès anticipés à certains titres, des jeux gratuits chaque mois, des sauvegardes en ligne, et bien plus encore. Pour obtenir une clé d'activation pour un jeu sur Steam, il faut d'abord l'acheter sur le site officiel de Steam ou sur un autre site de vente de clés de jeux vidéo en ligne. Une fois l'achat effectué, la clé d'activation est envoyée par e-mail ou est disponible sur le site de vente. Pour créer une liste de souhaits sur Steam, il suffit de parcourir le catalogue de jeux, de cliquer sur le bouton 'Ajouter à la liste de souhaits' sur la page du jeu que l'on souhaite ajouter, et de le retrouver plus tard dans la section 'Liste de souhaits' de la page d'accueil de Steam."
+        ],
+        "value": 1,
+        "type": "question"
+    }
+]

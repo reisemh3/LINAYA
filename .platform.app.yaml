@@ -1,5 +1,5 @@
 # The name of the app. Must be unique within a project.
-name: app
+name: LINAYA
 
 # The type of the application to build
 type: 'python:3.9.9'
